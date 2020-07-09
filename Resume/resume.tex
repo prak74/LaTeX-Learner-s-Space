@@ -1,0 +1,129 @@
+\documentclass{article}
+
+% Use Packages =================================
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{parskip}[parfill]
+\usepackage{ragged2e}
+\usepackage{multicol}
+\usepackage[a4paper, hmargin= 1in, vmargin= 1.5cm, headheight=47pt, headsep=0.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{tgschola}
+
+% Make Header ==================================
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Prakhar Mittal \\ B.Tech Electrical Engineering (2019-23) \\ CPI: FF.FF}
+\rhead{190070046 \\ UG Second Year \\ 190070046@iitb.ac.in \\ +91 8839365217}
+
+% % Page Color =================================
+% \pagecolor{black}
+% \color{white}
+
+% Commands
+\newcommand{\heading}[1]{\fontfamily{qtm}\selectfont{\textcolor{blue!50!green}{\LARGE{#1}}}\normalsize}     % Create section headings
+    
+\newcommand{\topic}[1]{\fontfamily{qcs}\selectfont{\large{\textbf{#1}}}\normalsize} % Subsections
+
+\newcommand{\sidetext}[1]{\hfill \small{\textit{\textcolor{black!30}{(#1)}}}\normalsize} % right-text
+
+% Begin ========================================
+\begin{document}
+\newgeometry{top=3in}
+
+\heading{Projects} 
+
+% \vspace{0.5em}
+    \topic{Image to \LaTeX{} Converter} \sidetext{ITSP 2019-20, IIT-Bombay}
+    
+    \begin{itemize}
+        \item Built a Deep Learning model for generating \LaTeX{} expression for a given mathematical expression 
+        uploaded in the form of an image.        
+        \item Used the Django framework to create a web application that allows the user to input the mathematical expression, 
+        and yield a compilable \LaTeX{} code for the same.
+        \item Seamlessly converted the equation to \LaTeX{} in order to
+        ease documentation for research work/homework/ wherever the user wishes to implement.
+        \item Also provided a compiled pdf file to show how the predicted code would look when compiled with a TeX editor, downloadable from the website using djano-tex. 
+        \item[Link to Project] \url{https://github.com/hawkeye-ITSP/webpage}
+    \end{itemize}
+
+\vspace{0.5em}    
+    \topic{Text Sentiment Analysis} \sidetext{ITSP 2019-20, IIT-Bombay}
+    
+    \begin{itemize}
+        \item Created a tool which could classify any sentence on the basis of it's sentiment into positive or negative and help automate classification of feedbacks inside the institute.
+        \item Used RNN and NLTK library in python for preprocessing and labelling of sentences.
+        \item Learned and implemented Naltural Language Processing algorithms, primarily, to deal with sentences containing words with both positive as well as negative sentiment.
+        \item[Link to Project] \url{https://github.com/kenzz17-ITSP/webpage}
+    \end{itemize}
+
+\vspace{0.5em}    
+    \topic{ML-Gym} \sidetext{SoC 2019-20, IIT-Bombay}
+    
+    \begin{itemize}
+        \item Worked in a team of 6 under a senior mentor to develop a platform where 
+        a ML user can see how an algorithm is behaving and can tweak its parameter to see 
+        result change in real time.
+        \item Manually implemented training and testing for Gaussian-SVM in python and developed a Django-HTML architecture for applying the same.
+        \item The website will provide the user with the flexibilty of choosing training algorithms for his/her uploaded dataset as well as to choose and compare accuracy between any hyperparameter combination of their choice for the algorithm.
+        \item[Link to Project] \url{https://github.com/codeLAlit/MLGYM}
+    \end{itemize}
+
+\vspace{0.8em}
+\heading{Technical Skills}
+
+    \begin{description}
+        \item [Programming] Python, C++, Bash
+        \item [Web Development] HTML, CSS, Bootstrap, JavaScript, Django
+        \item [Office Tools] \LaTeX{}, git, AutoCAD, SolidWorks
+    \end{description}
+        
+\restoregeometry
+\thispagestyle{empty}
+
+\heading{Scholastic Achievements}
+
+    \begin{itemize}
+        \item Secured \textbf{All India Rank 127} (among 245,000) in JEE Advanced, considered one of the toughest
+        entrance exams in the world. \sidetext{2019}
+        \item Secured \textbf{All India Rank 121} in JEE Mains out of more than 1 million candidates. \sidetext{2019}
+        \item Scored \textbf{438 marks} out of 450 in \textbf{BITSAT} \sidetext{2019}
+        \item Awarded scholarship in the \textbf{KVPY Fellowship Programme}, given only to around 1500 students throughout the country.\sidetext{2019}
+        \item Qualified for \textbf{INPHO}, Indian National Physics Olympiad, having placed in the \textbf{Top 1\%} nationwide, out of 50,000 candidates in \textbf{NSEP}, National Standard Examination in Physics. \sidetext{2018}
+        \item Qualified for \textbf{INCHO}, Indian National Chemistry Olympiad, having placed in the \textbf{Top 1\%} nationwide, out of 70,000 candidates in \textbf{NSEC}, National Standard Examination in Chemistry. \sidetext{2018}
+    \end{itemize}
+
+\vspace{0.8em}
+\heading{Co-Curricular Courses}
+    \begin{itemize}
+        \item \textbf{Machine Learning} MOOC by Andrew NG on coursera.org \sidetext{Summer,2020}
+        \item \textbf{Deep Learning} MOOC by deeplearning.ai on coursera.org \sidetext{Summer,2020}
+        \item \textbf{Basics of Web Development} from codecademy.com \sidetext{Summer,2020}
+        \item \textbf{Introduction to \LaTeX{}} by Learner's Space, IIT Bombay \sidetext{Summer,2020}
+    \end{itemize}
+
+\vspace{0.8em}
+\heading{Course Projects} 
+    
+    \topic{Voltage Source Design} \sidetext{Joseph John, EE-113 Introduction to Electrical Engineering Practice}
+    \begin{itemize}
+        \item Worked as a team of two to create a Regulated Voltage Supplier using basic knowledge about transformers, ICs, diodes and basic electrical elements.
+        \item The device would take in an AC supply from any plug point, and output a regulated supply of two constant voltage supplies, 5V and 12V.
+        \item Used resistors, capacitors, diodes and ICs to design a suitable circuit and realized it on a PCB.
+    \end{itemize}
+
+    \topic{Basics of Control Systems} \sidetext{Debraj Chakraborty, EE-113 Introduction to Electrical Engineering Practice}
+    \begin{itemize}
+        \item Engineered a linear control system pipeline in MATLAB Simulink for instant motion and alignment of a rod (imitating the role of a satellite dish) in the desired direction.
+        \item Also studied the effect of various starter signals, and feedback loops, optimized them, ultimately leading to the intuitive understanding of PID controllers.
+    \end{itemize}
+
+\vspace{0.8em}
+\heading{Extra Curricular Activities} 
+
+    \begin{itemize}
+        \item Engineered a \textbf{Remote Controlled bot} capable of negotiating different obstacles through a 100m long track. Stood \textbf{6th} out of more than 100 other teams.
+        \item Successfully completed a year long \textbf{NSO} programme in Lawn Tennis, organised by IIT Bombay 
+    \end{itemize}
+\end{document}

@@ -1,0 +1,23 @@
+\contentsline {section}{\numberline {1}Referencing and Table Of Contents}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}This is a Sub-Section}{1}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}One Point One}{1}{subsubsection.1.1.1}%
+\global \c@tocdepth 3\relax 
+\contentsline {subsubsection}{\numberline {1.1.2}One Point Two}{1}{subsubsection.1.1.2}%
+\global \c@tocdepth 2\relax 
+\contentsline {section}{\numberline {2}Page Layout}{2}{section.2}%
+\contentsline {section}{\numberline {3}Headers, Footers and Footnotes}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Page Styling}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Footnotes}{3}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Indices}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Introduction}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Make Index}{4}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Entries and Subentries}{4}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Index Formatting}{4}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Getting index inside the TOC}{4}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Multiple Columns}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Two Column}{5}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Multicol}{5}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Multicol sample}{5}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Additional Parameters}{5}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Vertical Rulers}{5}{subsubsection.5.2.3}%
+\contentsline {section}{My Index}{6}{section*.2}%

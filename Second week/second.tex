@@ -1,0 +1,190 @@
+\documentclass[12pt letterpaper]{article}
+
+% Use Packages ==================================
+\usepackage{hyperref} \setcounter{tocdepth}{2} %for referencing the sections
+\usepackage[a4paper, hmargin= 1in, vmargin= 1.5in]{geometry} %for page shaping
+\usepackage{fancyhdr} %for Page Styling
+\usepackage{multicol} % for Multicolumn generation
+\usepackage{lipsum} % Generate Lorem Ipsum Text
+\usepackage{xcolor} % For coloring vrules
+\usepackage{parskip}[parfill]
+\usepackage{ragged2e} 
+
+% Decide Page Style ==============================
+\pagestyle{fancy} % Declares that a custom style will be used
+\fancyhf{} %Removes the default header and footer
+
+\lhead{Second Week}
+\rhead{Section \thesection} %\thesection = section number
+\lfoot{Prakhar Mittal}
+\rfoot{Page \thepage}
+\chead{\leftmark} %Leftmark uses the name of the topmost layer (section with depth 0)
+\cfoot{Something else}
+\renewcommand{\footrulewidth}{1pt}
+
+% Create Vertical Ruling for Columns =====================
+\setlength{\columnseprule}{1pt}
+\def\columnseprulecolor{\color{blue}}
+
+% Set Title =======================================
+\title{Second Week}
+\author{Prakhar Mittal}
+
+% Make Index ========================================
+\usepackage{imakeidx}
+\makeindex[columns=1, title=My Index, intoc]
+
+% Begin ==========================================
+\begin{document}
+
+\maketitle
+\tableofcontents
+\thispagestyle{empty} %removes every kind of page styling
+
+\clearpage
+\pagenumbering{arabic} % To start numbering from this page instead of contents page
+
+\section{Referencing and Table Of Contents}
+\label{first}
+    \subsection{This is a Sub-Section}
+    \label{subsection}
+    This subsection is a part of Section \ref{first}.
+        \subsubsection{One Point One}
+        \label {1.1}
+        Testing, 1,2,3.
+        
+        \addtocontents{toc}
+        {\setcounter{tocdepth}{3}}
+
+        \subsubsection{One Point Two}
+        \label{1.2}
+        Just for testing Purposes.
+
+\addtocontents{toc}
+{\setcounter{tocdepth}{2}}
+\newgeometry{left=1in, top=1.2in, right=1in, bottom=1.5in} % \clearpage is included
+
+\section{Page Layout}
+The global values are first set in the preamble itself using the "geometry" tag. 
+To style a specific page, the "newgeometry" and "restoregeometry" tags are used. 
+Change the values in the tags to see the difference in page alignment. 
+The paper size, type, and orientation cannot be changed however using the newgeometry tag.
+
+\restoregeometry %clearpage is included
+
+\section{Headers, Footers and Footnotes}
+    \subsection{Page Styling}
+    This is done in the preamble. 
+    It creates the fancy header and footer you see at the top/bottom of the page. 
+    The default style (plain) is no header and page-number in the center of footer.
+    We can set commands so that certain pages are not included in the styling (such as 
+    the contents page in this document). 
+
+    \subsection{Footnotes}
+    Footnotes are those small comments that are given in a document\footnote{Like this one.} at the bottom
+    of the page\footnotemark[2] for clarification and stuff and help in not breaking the flow of the 
+    reader.
+    \footnotetext[2]{Or this one.}
+
+    For reusing the previously used footnotes, we can use\footnotemark[\value{footnote}]
+    
+    \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+    We can also change the style of footnotes used like \footnotemark[3] or \footnotemark[4].
+    This was done using renewcommand on "thefootnote", there are several other styles available, such as
+    \begin{itemize}
+        \item {\emph{arabic} Arabic numerals.}
+        \item {\emph{Roman} Roman numerals.}
+        \item {\emph{alph} Alphabetic lower case.}
+        \item {\emph{Alph} Alphabetic upper case.}
+        \item {\emph{fnsymbol} A special set of 9 characters.}
+    \end{itemize}
+
+    \footnotetext[3]{Like this one}
+    \footnotetext[4]{Or this one}
+
+\clearpage
+
+\section{Indices}
+    \subsection{Introduction}
+    You’ve definitely found yourself opening the last few pages of a textbook,
+    and you would’ve noticed a little handy something called the index \index{index}. 
+    It contains a list of all the keywords \index{keywords} found in the book, and where to find those keywords 
+    in the book. If you look at this document, written in \LaTeX \index{\LaTeX}, you’ll find a similar section right at the end.
+
+    \subsection{Make Index}
+    We use the package \textbf{imakeidx} for creating the index. Another package available
+    for this is \textbf{makeidx} but it offers less customization.
+    The index declaration is done in the preamble, using \verb!\!makeindex.
+    Words are added to the index by declaring a tag \verb!\!index\{``word''\}.
+    The index is then printed using \verb!\!printindex.
+
+    \subsection{Entries and Subentries}
+    In a proper index, most entries also include subentries which denote that 
+    the subentry is preceded by the main entry at so and so page.
+    For example, the \LaTeX{} keyword \index{\LaTeX!keyword} is nested with the word ``keyword'' in the index of this document
+    which means that the keywords ``\LaTeX{} keyword'' come at that page.
+    Making an index \index{index} section \index{index!section} is easily done using the 
+    \textbf{imakeidx} package.
+
+    \subsection{Index Formatting} 
+    Index formatting is easily done by passing optional arguments to \verb!\!makeindex.
+    For example, in this document, I have set ``columns'' (not column) argument equal to 1.
+
+    \subsection{Getting index inside the TOC}
+    By default, the index is not included inside the Table of Contents. 
+    To include it, we add another optional agrument to \verb!\!makeindex ``intoc''
+    
+\clearpage
+
+\section{Multiple Columns}
+    \subsection{Two Column}
+    FOr creating a document which seperates the page into two and then writes
+    (like a newspaper), just add [twocolumn] parameter to the \verb!\!documentclass\{\}
+    like, \verb!\!documentclass[twocolumn]\{article\}.
+
+    \subsection{Multicol}
+    For adding multiple columns to the document, or simply for more flexibility in writing columns
+    we can take the help of the \textbf{multicol} package. Here I've used the \textbf{lipsum} package as well to generate 
+    Lorem Ipsum placeholder text. The multicols is used as a seperate envionment.
+    
+        \begin{multicols}{3}
+        [
+            \subsubsection{Multicol sample}
+            Whatever is placed inside the square brackets is used as a header text.
+            The braces after multicols enviornment declaration decide the number of columns.
+        ]
+        \lipsum[1]
+        \end{multicols}
+    
+        \subsubsection{Additional Parameters}
+        We can set the seperation between the columns, which is defined by \verb!\!columnsep. We can
+        set it to whatever length we want by using \verb!\!setlength\{\verb!\!columnsep\}\{1cm\} 
+        his affects all the columns present below this command.
+
+        In the default multicols environment the columns are balanced so each one contains the 
+        same amount of text. This default format can be changed by the starred environment \textbf{multicols*}
+
+        To break the column we can use \verb!\!columnbreak. However, when a column is broken,
+        the remaining words are arranged in such a way to use up all the space present in that column
+        and hence, can have unwanted effects.
+
+        \subsubsection{Vertical Rulers}
+        The columns can be seperated using vertical lines.To add them, 
+        use \verb!\!setlength\{\verb!\!columnseprule\}\{1pt\} in the preamble.
+        For changing the color, you can add \verb!\!def\verb!\!columnseprulecolor\{\verb!\!color\{blue\}\}
+        in the preamble.
+
+
+
+
+
+
+
+
+
+    %running courses
+
+
+\printindex
+
+\end{document}
