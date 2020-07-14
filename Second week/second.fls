@@ -1,10 +1,10 @@
-PWD /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space
+PWD /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.tex
-OUTPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.log
+INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.tex
+OUTPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -99,24 +99,24 @@ INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
-OUTPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.idx
-INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.aux
-INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.aux
-OUTPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.aux
+OUTPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.idx
+INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.aux
+INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.aux
+OUTPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.aux
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.out
-INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.out
-INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.out
-INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.out
-OUTPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.pdf
-INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.out
-INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.out
-OUTPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.out
+INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.out
+INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.out
+INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.out
+INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.out
+OUTPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.pdf
+INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.out
+INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.out
+OUTPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.out
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
@@ -132,10 +132,10 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.toc
-INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.toc
+INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.toc
+INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.toc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
-OUTPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.toc
+OUTPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.toc
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm0700.tfm
@@ -145,11 +145,11 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.ind
-INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.ind
-INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.aux
-INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.out
-INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.out
+INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.ind
+INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.ind
+INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.aux
+INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.out
+INPUT /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.out
 INPUT /home/prak/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0600.600pk
 INPUT /home/prak/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk
 INPUT /home/prak/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0700.600pk

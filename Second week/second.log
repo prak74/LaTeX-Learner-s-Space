@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.5)  7 JUL 2020 20:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.5)  12 JUL 2020 19:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.tex
-(/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.tex
+**"/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.tex"
+(/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -302,7 +302,7 @@ Writing index file second.idx
 LaTeX Warning: Unused global option(s):
     [12ptletterpaper].
 
-(/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.aux)
+(/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.aux)
 \openout1 = `second.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
@@ -335,7 +335,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 38.
 LaTeX Info: Redefining \pageref on input line 38.
 LaTeX Info: Redefining \nameref on input line 38.
- (/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.out) (/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.out)
+ (/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.out) (/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.out)
 \@outlinefile=\write4
 \openout4 = `second.out'.
 
@@ -395,7 +395,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 41.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 41.
- (/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.toc
+ (/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -463,13 +463,13 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 ]
 runsystem(makeindex second.idx)...executed safely (allowed).
 
- (/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.ind)
+ (/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.ind)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 190.
  [6
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 190.
- (/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.aux)
+ (/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 190.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 190.
 Package rerunfilecheck Info: File `second.out' has not changed.
@@ -478,14 +478,14 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 190.
  ) 
 Here is how much of TeX's memory you used:
  7441 strings out of 483183
- 119769 string characters out of 5966293
+ 119975 string characters out of 5966293
  652043 words of memory out of 5000000
  22295 multiletter control sequences out of 15000+600000
  538121 words of font info for 43 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 35i,11n,45p,985b,314s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,11n,45p,999b,314s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/prak/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0600.600pk> </home/prak/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk> </home/prak/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0700.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on /home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/second.pdf (7 pages, 137798 bytes).
+Output written on "/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Second week/second.pdf" (7 pages, 137802 bytes).
 PDF statistics:
  198 PDF objects out of 1000 (max. 8388607)
  171 compressed objects within 2 object streams

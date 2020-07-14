@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1594299273 "/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Resume/resume.tex" "/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Resume/resume.pdf" "resume" 1594299276
+["pdflatex"] 1594299273 "/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Resume/resume.tex" "/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Resume/resume.pdf" "resume" 1594564118
   "/etc/texmf/web2c/texmf.cnf" 1593949580 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Resume/resume.aux" 1594299273 662 b2b94621371df8d9296b8bf5bec1b851 ""
   "/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Resume/resume.tex" 1594299275 6914 5c9440f3ce376e98155f3fef847ac34f ""
@@ -86,8 +86,8 @@
   "resume.tex" 1594299275 6914 5c9440f3ce376e98155f3fef847ac34f ""
   (generated)
   "/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Resume/resume.log"
-  "/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Resume/resume.pdf"
-  "resume.out"
   "resume.pdf"
+  "resume.out"
+  "/home/prak/Desktop/LaTeX/LaTeX-Learner-s-Space/Resume/resume.pdf"
   "resume.aux"
   "resume.log"
