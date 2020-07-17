@@ -1,12 +1,13 @@
-\documentclass[12pt, letterpaper]{article}
+\documentclass{article}
 
 % Import Packages ===================================
 \usepackage{amsmath} % for for typesetting formulae and equations
 \usepackage{amsthm} % for theorem enviornment (load AFTER amsmath)
 \usepackage{amssymb} % for (more) mathematical symbols
-
 \usepackage{esint} % more integration symbols
 
+\usepackage{multirow}
+\usepackage{multicol}
 \usepackage{graphicx} % for figures
 \usepackage{floatrow}  % for formatting figures and tables
 \usepackage{float} % for formatting figures and tables
@@ -20,6 +21,7 @@
 
 % Listing Environment Setup ===============================
 \lstset{
+    frameround=fttt
     numbers=left,       % Specify numbering and position
     language=[LaTeX]TeX,% Specify default language
     breaklines=true,    % Breaklines automatically only at whitespaces
@@ -27,8 +29,9 @@
     numberstyle=\tiny\color{gray},
     commentstyle=\color{green!30!black},
     stringstyle=\color{violet}
-    frameround=fttt
 }
+
+\lstnewenvironment{TeXlstlisting}{\lstset{language=[LaTeX]TeX}}{} % Just for being able to write \end{lstlisting} inside the environment
 
 % New Environment =========================================
 \newcounter{claim} % To create a new counter for numbering the environments (like theorem)
@@ -144,7 +147,7 @@
         or even $\sqrt[71]{1+x}$.
     \end{description}
 
-    Sometimes we want regular text while writing in mah ode, for that we use \verb!\!\textbf{text}.
+    Sometimes we want regular text while writing in math mode, for that we use \verb!\!\textbf{text}.
     For eg. 
     \begin{center}
         $\text{P} \subseteq \text{NP}$. However, we know that testing the positivity of the term
@@ -403,22 +406,293 @@ Often, in atechnical setting, you would find the need to paste pictures, and dra
 
 You can use \verb!floatrow! for inserting multiple images together.
 
+\begin{lstlisting}
+\begin{figure}[H]
+    \centering
+    \begin{floatrow}
+        %Figure boxes inside a floatrow will be placed side by side
+        %It's wise to keep a gap whle specifying dimensions
+        %\ffigbox[size]{text}{graphics}
+        \ffigbox[0.4\textwidth]{\caption{A picture}}{\includegraphics[width=0.4\textwidth]{Proof_of_online_semester.png}}
+        % Make sure the image width does not exceed that of the box.
+        \ffigbox[0.4\textwidth]{\caption{The same picture}}{\includegraphics[width=0.4\textwidth]{Proof_of_online_semester.png}}
+    \end{floatrow}    
+    \begin{floatrow}
+        \ffigbox[0.6\textwidth]{\caption{Same picture, but larger}}{\includegraphics[width=0.6\textwidth]{Proof_of_online_semester.png}}
+    \end{floatrow}
+\end{figure}
+\end{lstlisting}
 
+    This would show up as follows: 
+    \begin{figure}[H]
+        \centering
+        \begin{floatrow}
+            %Figure boxes inside a floatrow will be placed side by side
+            %It's wise to keep a gap whle specifying dimensions
+            %\ffigbox[size]{text}{graphics}
+            \ffigbox[0.4\textwidth]{\caption{A picture}}{\includegraphics[width=0.4\textwidth]{Proof_of_online_semester.png}}
+            % Make sure the image width does not exceed that of the box.
+            \ffigbox[0.4\textwidth]{\caption{The same picture}}{\includegraphics[width=0.4\textwidth]{Proof_of_online_semester.png}}
+        \end{floatrow}    
+        \begin{floatrow}
+            \ffigbox[0.6\textwidth]{\caption{Same picture, but larger}}{\includegraphics[width=0.6\textwidth]{Proof_of_online_semester.png}}
+        \end{floatrow}
+    \end{figure}
 
+    \subsection{Tables}
+    The \verb!table! environment encapsulates the \LaTeX{} table. It takes care 
+    of the placement of the table in the document, caption, etc. Nested in the \verb!table!
+    environment is the \verb!tabular! environment. The latter is where we enter the contents of out table.
 
+    Note that $\backslash \backslash$ starts a new row, and the ampersand \& acts as the column seperator.
 
+\begin{lstlisting}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{l|c|r} % Alignment of text in each column. also the vertical lines
+        \hline
+        \textbf{Left} & \textbf{Center} & \textbf{Right} \\
+        \hline
+        Liberal & Moderate & Conservative \\
+        Blue & vs & Red \\
+        Biden & vs & Trump \\
+        \hline
+    \end{tabular}
+    \caption{A Simple Table, USA Votes.}
+    \label{tab:votes}
+\end{table}
+\end{lstlisting}
 
+\begin{table}[H]
+    \centering
+    \begin{tabular}{l|c|r} % Alignment of text in each column. also the vertical lines
+        \hline
+        \textbf{Left} & \textbf{Center} & \textbf{Right} \\
+        \hline
+        Liberal & Moderate & Conservative \\
+        Blue & vs & Red \\
+        Biden & vs & Trump \\
+        \hline
+    \end{tabular}
+    \caption{A Simple Table, USA Votes.}
+    \label{tab:votes}
+\end{table}
 
+    Include packages \verb!multirow! and \verb!multicol! packages in the preamble.
+    
+    With the \verb!\multirow{NUMBER_OF_ROWS}{WIDTH}{CONTENT}! command, we can 
+    have a cell span multiple rows. (Using * as width lets \LaTeX{} automatically
+    determine it):
+\begin{lstlisting}
+\begin{table}
+    \centering
+    \begin{tabular}{l|c|r}
+        \hline
+        \textbf{Left} & \textbf{Center} & \textbf{Right} \\
+        \hline
+        Liberal & Moderate & Conservative \\
+        Blue & \multirow{3}{*}{vs} & Red \\
+        Biden &  & Trump \\
+        Democrats & & Republicans \\
+        \hline
+    \end{tabular}
+    \caption{Multirow Table. USA votes.}
+\end{table}
+\end{lstlisting}
 
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{l|c|r}
+            \hline
+            \textbf{Left} & \textbf{Center} & \textbf{Right} \\
+            \hline
+            Liberal & Moderate & Conservative \\
+            Blue & \multirow{3}{*}{vs} & Red \\
+            Biden &  & Trump \\
+            Democrats & & Republicans \\
+            \hline
+        \end{tabular}
+        \caption{Multirow Table. USA votes.}
+    \end{table}
+    With the \verb!\multicols{NUMBER_OF_COLS}{ALIGNMENT}{CONTENT}! we can have a cell span
+    several columns.
+\begin{lstlisting}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \textbf{Day} & Session 1 & Session 2 & Session 3 \\
+        \hline 
+        1 & \multicolumn{2}{c|}{Australia} & India \\
+        \hline
+        2 & \multicolumn{3}{c|}{Australia} \\
+        \hline
+        3 & \multicolumn{2}{c|}{India} & Australia \\
+        \hline
+        4 & \multicolumn{3}{c|}{India} \\
+        \hline 
+        5 & \multicolumn{2}{c|}{Shared} & India \\
+        \hline
+    \end{tabular}
+    \caption{Who dominated which session: India v/s Australia, Kolkata 2001}
+    \label{edengardens}
+\end{table}
 
+\end{lstlisting}
+    
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            \textbf{Day} & Session 1 & Session 2 & Session 3 \\
+            \hline 
+            1 & \multicolumn{2}{c|}{Australia} & India \\
+            \hline
+            2 & \multicolumn{3}{c|}{Australia} \\
+            \hline
+            3 & \multicolumn{2}{c|}{India} & Australia \\
+            \hline
+            4 & \multicolumn{3}{c|}{India} \\
+            \hline 
+            5 & \multicolumn{2}{c|}{Shared} & India \\
+            \hline
+        \end{tabular}
+        \caption{Who dominated which session: India v/s Australia, Kolkata 2001}
+        \label{edengardens}
+    \end{table}
+    We can also use \verb!multirow! and \verb!multicolumn! in tandem. Observe the code
+    carefully to see how it's done.
 
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            \multicolumn{2}{|c|}{\multirow{2}{*}{$a^2$}} & \multirow{2}{*}{$ab$} & . \\
+            \multicolumn{2}{|c|}{} & & . \\ % The empty container is aplaceholder, so that the column seperation line does not print 
+            \hline
+            \multicolumn{2}{|c|}{$ab$} & $b^2$ & . \\
+            \hline
+            . & . & . & . \\
+            \hline
+        \end{tabular}
+        \caption{Middle School Algebra}
+        \label{multirowcolumn}
+    \end{table}
 
+\begin{lstlisting}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \multicolumn{2}{|c|}{\multirow{2}{*}{$a^2$}} & \multirow{2}{*}{$ab$} & . \\
+        \multicolumn{2}{|c|}{} & & . \\ % The empty container is aplaceholder, so that the column seperation line does not print 
+        \hline
+        \multicolumn{2}{|c|}{$ab$} & $b^2$ & . \\
+        \hline
+        . & . & . & . \\
+        \hline
+    \end{tabular}
+    \caption{Middle School Algebra}
+    \label{multirowcolumn}
+\end{table}
+\end{lstlisting}
 
+    \subsection{Floats}
+    Figures and Tables in \LaTeX{} are actually examples of Floats, containers for things
+    in a document that cannot be broken over a page. \LaTeX{} Does not put the floats into 
+    wherever you write them in your code, but it decides the best place to put it. Sometimes
+    your image or table can even end up in a different page than the content where you wrote
+    the code to insert the table.
 
+    You can tell \LaTeX{} where youwould prefer it to put your float, by passing in a location
+    specifier inside []. For example, in the Tables/Figure codes, you'll see something
+    like \verb!\begin{table}[H]!  , here the [H] tells \LaTeX{} that you want to place the float
+    precisely at the position in your \LaTeX{} code. While this may seem desirable,
+    it does not always give desirable results. Her eare the specifiers you can put in
+    \begin{description}
+        \item[h] Place the float here, i.e., \emph{approximately} at the same point it occurs in the 
+        source text (however, not \emph{exactly} the same point).
+        \item[t] Position at the \emph{top} of the page.
+        \item[b] Position at the \emph{bottom} of the page.
+        \item[p] Put on a special page for floats only.
+        \item[!] Override internal parameters \LaTeX{} uses for determining ``good'' float
+            positions. You would use it in conjunction with another specifier, like \verb!\begin{table}[h!]!.
+            This is kind of like forcing \LaTeX{} to put it wherever you are telling it to.
+        \item[H] As you know, places the float at precisely the location as in the \LaTeX{} code.
+    \end{description}
 
+\clearpage
+\section{Highlighting Code}
+Programming now permeates in almost every field of research, and hence, code is a necessity in most technical reports. 
+To get started, we recommend the easily accessible \verb!listings! package. \verb!minted! does an even more elaborate job, 
+however, it requires some effort to get it running. \cite{greek}
 
+Set your preferences in the preamble like this:
+\begin{lstlisting}
+\lstset{
+    numbers=left,
+    %language = <set default language>,
+    breaklines=true, %automatic line breaks only at whitespace
+    keywordstyle=\color{blue}\bfseries, 
+    numberstyle=\tiny\color{gray},
+    commentstyle=\color{green!30!black},
+    stringstyle = \color{violet}
+}
+\end{lstlisting}
 
+And then when you want to adorn your document with code, use the \verb!lstlisting! environment as follows:
+\begin{TeXlstlisting}
+\begin{lstlisting}[language=<the programming language>]
+<your code goes here!>
+\end{lstlisting}
+\end{TeXlstlisting}
+And then, it's magic.
 
+\clearpage
+
+    \subsection{Example: C++ code snippet}
+    \verb![language=C++]!
+\begin{lstlisting}[language=C++]
+#include <iostream>
+//prerocessor directive
+using namespace std;
+
+int main(int argc, char* argv[])
+{
+    string s=  "Hello World";
+    cout<<s<<endl;
+}
+\end{lstlisting}
+
+    \subsection{Example: Python code snippet}
+    \verb![language=python]!
+\begin{lstlisting}[language=python]
+from numpy import *
+#insanely powerful library
+
+print('First five odd numbers')
+for x in range(10):
+    if not x%2==0:
+        print(x)
+\end{lstlisting}
+
+    \subsection{Example: Java code snippet}
+    \verb![language=java]!
+\begin{lstlisting}[language=java]
+//yet aother Hello World
+
+public class welcome
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Welcome to the world of Java");
+    }
+}
+\end{lstlisting}
+
+\newpage
+\bibliography{third_week}
+\bibliographystyle{plainurl}
 
 
 \end{document}

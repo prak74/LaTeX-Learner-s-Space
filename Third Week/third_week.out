@@ -8,3 +8,9 @@
 \BOOKMARK [1][-]{section.3}{Custom Environments}{}% 8
 \BOOKMARK [1][-]{section.4}{Figures and Tables}{}% 9
 \BOOKMARK [2][-]{subsection.4.1}{Figures}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.2}{Tables}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.3}{Floats}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{Highlighting Code}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{Example: C++ code snippet}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.2}{Example: Python code snippet}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.3}{Example: Java code snippet}{section.5}% 16

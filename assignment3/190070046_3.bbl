@@ -1,0 +1,14 @@
+\begin{thebibliography}{1}
+
+\bibitem{linalg}
+K.Hoffmann and R.Kunze.
+\newblock {\em Linear Algebra}.
+\newblock Prentice-Hall, 2 edition, 1971.
+
+\bibitem{cite2}
+V.Pan.
+\newblock Optimal and nearly optimal algorithms for approximating polynomial
+  zeros.
+\newblock {\em Computers \& Mathematics with Applications}, 31(12), 1996.
+
+\end{thebibliography}

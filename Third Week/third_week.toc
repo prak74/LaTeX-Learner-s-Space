@@ -8,3 +8,9 @@
 \contentsline {section}{\numberline {3}Custom Environments}{7}{section.3}%
 \contentsline {section}{\numberline {4}Figures and Tables}{8}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Figures}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Tables}{10}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Floats}{12}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Highlighting Code}{14}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Example: C++ code snippet}{15}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Example: Python code snippet}{15}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Example: Java code snippet}{15}{subsection.5.3}%
