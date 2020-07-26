@@ -1,0 +1,28 @@
+\documentclass{beamer}
+\usepackage{lipsum}
+
+\usetheme{Madrid}
+
+\title{Sample Beamer}
+\author[Prakhar]{Prakhar Mittal}
+\institute[IIT-B]{IIT Bombay}
+\date{21 July 2020}
+
+\begin{document}
+    \frame{\titlepage}
+    \begin{frame}
+        \frametitle{First Frame}
+        \lipsum[1]
+    \end{frame}
+    \begin{frame}
+        \frametitle{Effects}
+        This is a text \pause to show effects in working
+        \begin{itemize}
+            \item<2-3>Can see from slide 1 till 3
+            \item <2-> Can see from slide 2
+            \item <3-> Can see from slide 3
+            \item <4-> Can see from slide 4
+        \end{itemize}
+    
+    \end{frame}
+\end{document}

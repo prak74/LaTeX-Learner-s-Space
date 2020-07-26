@@ -1,0 +1,62 @@
+\documentclass{knittingpattern}
+
+% Use Packages ========================================
+\usepackage{xcolor}
+\usepackage{lipsum}
+\usepackage{skak}
+\usepackage{url}
+\usepackage{hyperref}
+ 
+% Title ===============================================
+\title{FIeld Specific \LaTeX{} tricks}
+\author{Prakhar Mittal}
+
+% Main Body ===========================================
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\newpage
+
+\section{Knitting Patterns}
+This class provides a very convenient way to introduce boxed diagrams. We are thus going to use
+our stock image a few more times. Also, it has few features to make knitting instructions more readable,
+however, we can adapt them to make prettier documents for our purposes as well.
+\diagram{graph.png}
+
+\important[0.7]{black}{blue!40}{We have a way of highlighting important text, or as was originally intended,
+important instructions. Feel free to choose whatever background and border colour you like when you replicate
+these features, but try to replaicate the dimensions as well as you can}
+
+\begin{pattern}[0.2]{green!50!}{red!20}
+    \textbf{Course} & \textbf{Credits} \\
+        Introduction to Computer Programming & 6 \\
+        Abstractions and Paradigms in Programming & 6 \\
+        Abstractions and Paradigms in Programming Lab & 3 \\
+        Data Structures and Algorithms & 6 \\
+        Softwares Systems Lab & 8 \\
+\end{pattern}
+
+\begin{note}{black}{blue!20!green!30}{Note}{
+    This is a note. The above feature was introduced to typeset a sequence of knitting instructions.
+    The first column is for the instruction, the second for the number of stitches. But hey, it looks
+    cool!
+}
+\end{note}
+
+\biog[0.4]{graph.png}{\lipsum[1] Download knittingpattern \href{https://ctan.org/pkg/knittingpattern?lang=en}{from here}.}
+
+\clearpage
+
+\newgame
+
+
+
+
+
+
+
+
+
+\end{document}
